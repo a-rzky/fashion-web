@@ -1,0 +1,635 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --primary-color: #e6c744;
+    --light-color: #ffffff;
+    --dark-color: #000000;
+    --grey-color: #a5a8b3;
+  }
+  
+  body {
+    font-family: 'Poppins'; 
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+
+
+/* navbar css */
+
+.navbar{
+    padding: 20px;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu ul{
+    display: flex;
+}
+
+.navbar .main-menu ul li a{
+    display: block;
+    padding: 10px 20px;
+}
+
+
+/* hero css */
+
+.hero{
+    padding: 20px;
+}
+
+
+.hero .container{
+    position: relative;
+    border-radius: 30px;
+    padding: 55px 55px 60px;
+    /* display: flex; */
+    background-image: url(/image/hero-img-bg.jpg);
+    margin-bottom: 25px;
+}
+
+.hero .hero-text h1{
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.hero .hero-text a{
+    margin-top: 25px;
+}
+
+.text-hilite{
+    color: var(--primary-color);
+}
+
+
+/* brands section */
+.brands{
+    margin-bottom: 50px;
+}
+
+.brands .container{
+    /* gap: 25px; */
+    display: flex;
+    justify-content:space-between;
+    padding: 15px 100px 10px;
+    background-color: var(--primary-color);
+
+}
+
+.brands .brand-img{
+    width: auto;
+    height: 30px;
+}
+
+/* new arrivals section */
+
+.new-arrivals{
+    margin-bottom: 120px;
+}
+
+.new-arrivals-cards{
+    margin-top: 30px;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3,300px)
+}
+
+.card-detail{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.new-arrivals-img{
+    width: 300px;
+    height: auto;
+    transition: 0.5s;
+}
+
+.new-arrivals-img:hover{
+    opacity: 0.7;
+}
+
+/* Banner promotion section */
+.banner-promo{
+    margin-bottom: 100px;
+}
+
+.banner-promo .container{
+    align-content: center;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(/image/Banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-promo .banner-text{
+    width: 40%;
+    margin: 100px;
+}
+.banner-promo .banner-text h1{
+    margin-bottom: 20px;
+}
+
+.banner-promo .banner-text p{
+    margin-bottom: 20px;
+}
+
+/* favourite section */
+.favourite .favourite-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+}
+
+.favourite-img{
+    width: 520px;
+    height: auto;
+    transition: 0.5s;
+}
+
+.favourite-img:hover{
+   opacity: 0.7;
+}
+
+/* mobile-app-banner */
+.mobile-app-banner{
+    margin-top: 50px;
+}
+
+.mobile-app-banner .container{
+    gap: 150px;
+    padding: 30px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-app-banner .text-app-banner h1{
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.mobile-app-banner .text-app-banner p{
+    margin-bottom: 20px;
+}
+
+.mobile-app-banner .app-logo img{
+    /* padding: 5px; */
+    width: 100px;
+    height: auto;
+}
+
+
+.mobile-app-banner img{
+    width: auto;
+    height: 500px;
+}
+
+/* community section */
+.community .container{
+    padding: 100px 20px;
+    /* display: flex; */
+    background-color: var(--primary-color);
+    align-content: center;
+}
+
+.community .community-text{
+  color: var(--light-color);
+}
+
+.community .community-text h1{
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+
+
+.email-subs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .input-wrapper {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .input-wrapper input {
+    width: 100%;
+    padding: 15px 100px 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .input-wrapper input::placeholder {
+    color: #b0b0b0;
+  }
+  
+  .input-wrapper button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .input-wrapper button:hover {
+    background-color: #333;
+  }
+
+  /* footer */
+
+  footer .container{
+      background-color: var(--dark-color);
+  }
+
+footer .footer-wrapper{
+    padding: 60px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#text-body{
+    margin-top: 15px;
+}
+
+footer .wrapper{
+    gap: 80px;
+    display: flex;
+}
+
+footer .wrapper li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer .account-sosmed{
+    margin-top: 20px;
+    display: flex;
+    gap: 7px;
+}
+
+
+.icon-sosmed{
+    height: auto;
+    width: 25px;
+}
+
+
+.design-by{
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+  /* utility class */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+
+/* text classes */
+.text-center{
+    text-align: center;
+}
+
+.text-reg{
+    font-weight: 500;
+}
+
+.text-semi-bold{
+    font-weight: 600;
+}
+
+.text-bold{
+    font-weight: 900;
+}
+
+
+.text-sm{
+    font-size: 0.8rem;
+}
+
+.text-md{
+    font-size: 1.2rem;
+}
+
+.text-xl{
+  font-size: 4.5rem;
+}
+
+.text-lg{
+    font-size: 4.5rem;
+    line-height: 1;
+}
+
+.body-heading{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.text-color-gray{
+    color: var(--grey-color);
+}
+
+.text-color-light{
+    color: rgb(119, 119, 119)
+}
+
+.text-color-white{
+    color: var(--light-color);
+}
+
+.letter-spacing{
+    letter-spacing: 1.5px;
+}
+
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: var(--dark-color);
+    color: var(--light-color);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .btn:hover {
+    /* opacity: 0.7; */
+    color: var(--primary-color);
+  }
+  
+  .btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+  }
+
+
+  /* Hamburger Button */
+.hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .hamburger-button .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background: #333;
+    margin: 6px 0;
+  }
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+  }
+
+  /* Media Queries */
+@media (max-width: 960px){
+
+    .hero .container{
+        background-position: 20% 0;
+    }
+    .favourite-img{
+        width: 375px;
+        height: auto;
+
+    }
+    .new-arrivals-cards{
+        grid-template-columns: repeat(3,250px)
+    }
+
+    .new-arrivals-img{
+        width: 235px;
+        height: auto;
+    }
+
+    .banner-promo .container{
+        background-position: 35% 0%;
+        
+    }
+
+    .mobile-app-banner .container{
+        gap: 25px;
+    }
+
+    .brands .container{
+        gap: 20px;
+        padding: 15px 50px 10px;
+    }
+
+    .favourite-img{
+        width: 360px;
+        height: auto;
+
+    }
+
+ 
+
+
+
+}
+
+
+@media (max-width: 670px){
+    .text-xl{
+        font-size: 4rem;
+    }
+
+    .text-lg{
+        font-size: 3rem;
+    }
+    .navbar .main-menu{
+        display: none;
+    }
+    .navbar .hamburger-button {
+        display: block;
+      }
+
+    .hero .container{
+        position: relative;
+        border-radius: 30px;
+        padding: 55px 20px 60px;
+      }
+    
+    .brands .container{
+        gap: 50px;
+        overflow-x: auto;
+        padding: 15px 40px 10px;
+    }
+
+    .brands .container::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .brands .brand-img{
+        width: auto;
+        height: 30px;
+    }
+    .new-arrivals-cards{
+        margin-top: 10px;
+        justify-content: space-between;
+        display: grid;
+        overflow-x: auto;
+
+    }
+
+    .new-arrivals-cards::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .new-arrivals-img{
+        width: 280px;
+        height: auto;
+    }
+
+    .banner-promo{
+        margin-bottom: 50px;
+    }
+
+    .banner-promo .banner-text{
+        width: 90%;
+        margin: 10px;
+    }
+
+    .banner-promo .container{
+        padding: 20px 10px;
+        background-color: var(--primary-color);
+        background-image: none;
+  
+    }
+
+    .favourite .favourite-cards{
+        display: grid;
+        margin-top: 15px;
+        gap: 30px;
+    }
+    .favourite-img{
+        width: 380px;
+        height: auto;
+
+    }
+    .mobile-app-banner .container{
+        display: grid;
+        gap: 25px;
+    }
+
+    .mobile-app-banner img{
+        width: auto;
+        height: 450px;
+    }
+
+    footer .footer-wrapper{
+        display: grid;
+    }
+
+    footer .wrapper{
+        gap: 20px;
+        display: grid;
+    }
+
+    footer .wrapper li {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .mobile-app-banner .text-app-banner{
+        text-align: center;
+    }
+
+    footer .account-sosmed{
+        margin-bottom: 20px;
+    }
+
+
+    
+}
+
+@media (max-width: 500px){
+    .text-xl{
+        font-size: 3.8rem;
+    }
+
+    .hero .container{
+        background-position: 10% 0;
+    }
+
+
+    .new-arrivals-img{
+        width: 230px;
+        height: auto;
+    }
+
+    .favourite .favourite-cards{
+        display: grid;
+        justify-content: center;
+        margin-top: 40px;
+    
+    }
+
+    .favourite-img{
+        width: 380px;
+        height: auto;
+    }
+    
+}
